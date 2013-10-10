@@ -2,10 +2,63 @@
 \newcommand{\CP}{\mathbb{CP}}
 \newcommand{\del}{\partial}
 
-How to think of blowups? Consider the following geometric picture: 
-consider the origin $0$ in $\C^n$. Thicken the neighborhood of 
-$0$ to a ball $B$, and glue in a $\CP^{n - 1}$ by identifying all
-$z \in \del B$ with lines through $z$ and the origin. We show that
-it is in fact a complex manifold.
+Blowing up varieties has long been the tool of the algebraic
+geometer. However, blow-ups are not specific to algebraic geometry.
+In the following, we give two perspectives, one geometric and one
+algebraic, and we relate the two by showing that the geometric
+realization of an abstract blow-up are the same as the geometric
+blow-up.
 
+\subsection{Geometric Construction}
 
+The exposition here follows and elaborates on the discussion in
+Voisin's and Griffith and Harris. Here, $X$ is a smooth manifold
+emitting an almost complex structure. More precisely, there exists
+some automorphism $I: TX \to TX$ such that $I^2 = -1$. Let $Z$ be
+a submanifold with complex structure.
+
+\begin{definition}
+A \emph{local linear system of equations} for $Z$ over $X$ is an
+open chart $U$ together with holomorphic functions $f_1,\dots,
+f_k$ with independent differentials where $k = \codim_X Z$ such 
+that $Z = V(f_1,\dots,f_k)$. 
+\end{definition}
+
+\begin{prop}
+
+\end{prop}
+
+\subsection{Algebraic Geometric Construction}
+
+The theory in algebraic geometry parallels the geometric 
+construction, and an avid reader can quickly gloss over these
+notes and recognize the parallelism. We begin by recalling 
+some classic notions in scheme theory.
+
+\begin{definition}
+A morphism $f: Z \to X$ is called a \emph{closed immersion} if $\O_X \to 
+f_*\O_Z$ is surjective.
+\end{definition}
+
+We say that two closed immersions $f: Z \to X$ and $g: Z' \to X$ 
+are isomorphic if there exists an isomorphism $h: Z \to Z'$ such 
+that
+\[
+\begin{diagram}
+Z       & \rTo & X        \\
+\dTo{h} &      & \dEquals \\
+Z'      & \rTo & X
+\end{diagram}
+\]
+is commutative.
+
+\begin{definition}
+A \emph{closed subscheme} of $X$ is an isomorphism class of 
+closed immersions. 
+\end{definition}
+
+We will often write ``$Z$ is a closed subscheme of $X$'' to mean 
+that $Z \to X$ is a (representative) closed immersion of its class.
+
+\begin{prop}
+\end{prop}
